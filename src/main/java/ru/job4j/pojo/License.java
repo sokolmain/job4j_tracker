@@ -1,13 +1,13 @@
 package ru.job4j.pojo;
 
-import java.util.Date;
+import java.time.LocalDate;
 import java.util.Objects;
 
 public class License {
     private String owner;
     private String model;
     private String code;
-    private Date created;
+    private LocalDate created;
 
     @Override
     public int hashCode() {
@@ -47,11 +47,12 @@ public class License {
         this.code = code;
     }
 
-    public Date getCreated() {
+    public LocalDate getCreated() {
         return created;
     }
 
-    public void setCreated(Date created) {
-        this.created = created;
+    public void setCreated(int year, int month, int dayOfMonth) {
+        this.created = LocalDate.of(year, month, dayOfMonth);
     }
 }
+

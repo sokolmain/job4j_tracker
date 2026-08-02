@@ -9,10 +9,12 @@ public class Main {
         townCar.brake();
         System.out.println();
         SportCar sportCar = new SportCar();
-        sportCar.changeGear();
-        sportCar.accelerate();
-        sportCar.steer();
-        sportCar.brake();
-        sportCar.refill();
+        Vehicle vehicle = sportCar;
+        Fuel fuel = sportCar;
+        vehicle.changeGear();
+        vehicle.accelerate();
+        vehicle.steer();
+        vehicle.brake();
+        fuel.refill();
     }
 }

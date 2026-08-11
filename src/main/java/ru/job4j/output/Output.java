@@ -1,5 +1,5 @@
 package ru.job4j.output;
 
 public interface Output {
-    void println(Object object);
+    void println(String output);
 }
